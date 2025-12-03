@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - Government Schemes</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo" data-i18n="logo">Government Schemes</div>
+            <ul>
+                <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+                <li><a href="schemes.html" data-i18n="nav.schemes">Schemes</a></li>
+                <li id="profile-link" style="display: none;"><a href="profile.html" data-i18n="nav.profile">Profile</a></li>
+                <li id="auth-links">
+                    <a href="signin.html" data-i18n="nav.signin">Sign In</a>
+                    <a href="signup.html" data-i18n="nav.signup">Sign Up</a>
+                </li>
+            </ul>
+            <div class="lang-switch">
+                <label for="lang-select" data-i18n="lang.label">Language</label>
+                <select id="lang-select" class="lang-select">
+                    <option value="en">English</option>
+                    <option value="kn">ಕನ್ನಡ</option>
+                </select>
+                <label for="theme-select">Theme</label>
+                <select id="theme-select" class="theme-select">
+                    <option value="light">Light</option>
+                    <option value="dark">Dark</option>
+                </select>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="signin-form">
+            <h2 data-i18n="signin.title">Sign In</h2>
+            <form id="signin-form">
+                <label for="email" data-i18n="signin.email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="password" data-i18n="signin.password">Password</label>
+                <input type="password" id="password" name="password" required>
+                <label for="login-role" data-i18n="signin.role">Login as</label>
+                <select id="login-role" name="login-role">
+                    <option value="citizen" data-i18n="signin.role.citizen">Citizen</option>
+                    <option value="admin" data-i18n="signin.role.admin">Admin</option>
+                </select>
+                <button type="submit" data-i18n="signin.submit">Sign In</button>
+            </form>
+            <p><span data-i18n="signin.noaccount">Don't have an account?</span> <a href="signup.html" data-i18n="signin.signuphere">Sign up here</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p data-i18n="footer.bottom">© 2024 Government Schemes Portal. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
